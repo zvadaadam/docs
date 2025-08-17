@@ -4,4 +4,93 @@ description: "Learn about integrations available with SteerCode"
 icon: 'link'
 ---
 
-# Integrations
+SteerCode integrates with services like **Supabase** to give your project a production-ready backend (database, auth, storage, realtime, serverless) while you design and refine the UI in one place.
+
+<Info>
+  You can ask SteerCode to set up integrations in **Plan Mode** (to outline and
+  prepare) and then switch to **Code Mode** to implement. See{" "}
+  <a href="/how-to/code-vs-plan-mode">Code vs Plan Mode</a>.
+</Info>
+
+## Supabase Integration
+
+Supabase provides a hosted **PostgreSQL** database with **real-time** capabilities, **user authentication**, **file storage**, and **Edge Functions** (serverless). Connecting Supabase to your SteerCode project gives you a full backend without writing boilerplate or managing servers.
+
+### What you get
+
+- **Database (PostgreSQL)** – Store/query data with full SQL. SteerCode can propose schema and wire your UI.
+- **Auth** – Email/password and social logins. SteerCode can scaffold login, signup, gating, and session checks.
+- **Storage** – Upload images/files with URLs and access controls.
+- **Realtime** – Stream live data changes for chat, dashboards, and collaboration.
+- **Edge Functions** – Run custom backend logic (TypeScript/JavaScript) for webhooks, payments, AI calls, and schedulers.
+
+<Tip>
+  SteerCode unifies front-end and back-end setup. Describe the feature (“Add a
+  feedback form and save responses”) and SteerCode will scaffold the UI and the
+  Supabase schema/logic needed to power it.
+</Tip>
+
+---
+
+## Connect Supabase to your project
+
+<Steps>
+<Step title="Create a Supabase account and project">
+Sign up at the Supabase website and create a project (free tier works well for development).
+<Check>
+You should have a Supabase organization and a project with a ready PostgreSQL database.
+</Check>
+</Step>
+
+<Step title="Open Integrations in SteerCode">
+  In your project, open **Integrations → Connect Supabase**.
+</Step>
+
+<Step title="Authorize & select your Supabase project">
+  Log into Supabase (if prompted), grant access, then **select an organization
+  and project** to link.
+</Step>
+
+<Step title="Wait for configuration">
+SteerCode configures the connection automatically.
+<Check>
+You’ll see a confirmation in the UI when the connection is ready.
+</Check>
+</Step>
+</Steps>
+
+<Info>
+  Both SteerCode and Supabase offer generous free tiers for development.
+  Production usage may require paid plans for each service.
+</Info>
+
+## Add user authentication
+
+### Email + password (basic)
+
+1. In **Plan Mode**, ask: **“Add login (email/password) with Supabase and gate the dashboard.”**
+2. Switch to **Code Mode** to implement the flows and screens.
+3. Create test users in **Supabase → Authentication → Users** or via your app’s signup page.
+
+<Tip>
+  For local/testing, you can disable email confirmations in **Supabase →
+  Authentication → Providers → Email**. Re-enable for production.
+</Tip>
+
+### Social logins (e.g., Google)
+
+<Steps>
+  <Step title="Enable the provider in Supabase">
+    Go to **Authentication → Providers** and turn on Google (or another
+    provider). Add the OAuth Client ID/Secret.
+  </Step>
+  <Step title="Ask SteerCode to add the button">
+    Prompt: **“Add ‘Sign in with Google’ to the login screen using Supabase
+    auth.”** SteerCode updates the UI and wiring.
+  </Step>
+</Steps>
+
+<Warning>
+  Verify redirect URLs and environment variables for each OAuth provider.
+  Misconfigured redirects are a common failure point.
+</Warning>

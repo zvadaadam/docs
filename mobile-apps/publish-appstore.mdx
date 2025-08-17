@@ -1,7 +1,49 @@
 ---
 title: Publish to App Store
 description: "Learn how to publish your mobile app to the App Store"
-icon: 'app-store'
+icon: "app-store"
 ---
 
-# Publish to App Store
+**Automatic App Store publishing is coming soon.** For now, export your codebase and follow Apple’s submission process.
+
+<Steps>
+<Step title="Download your codebase">
+Open **Codebase** → **Download Code** to get a ZIP of your project.
+</Step>
+
+<Step title="Prepare your app">
+  Set your app name, icons, splash screens, bundle identifier, and required
+  permissions.
+</Step>
+
+<Step title="Build and archive">
+  Open the project in Xcode, set signing & capabilities, then create an
+  **Archive** for distribution.
+</Step>
+
+<Step title="Submit to App Store Connect">
+Upload the build, complete metadata (screenshots, privacy, age rating), and submit for review.
+</Step>
+</Steps>
+
+<Info>
+  See Apple’s official guide:{" "}
+  <a
+    href="https://developer.apple.com/app-store/submitting/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Submitting to the App Store
+  </a>
+  .
+</Info>
+
+<Warning>
+  Review data collection, permissions, and third-party SDK usage before
+  submission. Ensure your privacy disclosures are accurate.
+</Warning>
+
+<Tip>
+  Create a simple **TestFlight** beta first. You’ll collect device-specific bugs
+  and performance metrics before public release.
+</Tip>

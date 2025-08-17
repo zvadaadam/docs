@@ -1,7 +1,47 @@
 ---
 title: Choose AI Models
 description: "Learn how to choose the right AI models for your project"
-icon: 'brain'
+icon: "brain"
 ---
 
-# Choose AI Models
+Pick a model that matches your task. You can switch models at any time before sending a message.
+
+<Frame caption="Select a model before you send your message">
+  <img
+    src="/images/select-model-web.png"
+    alt="Model picker in the SteerCode composer"
+  />
+</Frame>
+
+### Available models
+
+| Model                     | Provider  | Profile                      | Thinking/Reasoning           | Credit usage           |
+| ------------------------- | --------- | ---------------------------- | ---------------------------- | ---------------------- |
+| **GPT-5**                 | OpenAI    | Most advanced coding model   | ✅ Deep multi-step reasoning | **Premium (credits)**  |
+| **GPT-4.1**               | OpenAI    | Fast senior programmer       | –                            | **Premium (credits)**  |
+| **GPT-4.1 mini**          | OpenAI    | Fast junior programmer       | –                            | **Basic (no credits)** |
+| **Gemini 2.0 Flash**      | Google    | Fast junior programmer       | –                            | **Basic (no credits)** |
+| **Claude Sonnet 3.7 / 4** | Anthropic | Strong quality-speed balance | ✅                           | **Premium (credits)**  |
+| **Claude Opus 4**         | Anthropic | Highest-quality reasoning    | ✅                           | **Premium (credits)**  |
+
+<Info>
+  You may occasionally see **experimental / stealth models** (e.g., *Horizon
+  Alpha*). Availability changes—watch our socials for announcements.
+</Info>
+
+<Tip>
+  If you’re iterating rapidly or doing light edits, choose a **Basic** model to
+  **avoid credit usage**. Switch to a **Premium** model for complex refactors,
+  tricky bugs, or multi-step integrations.
+</Tip>
+
+### Quick guidance
+
+- **Speed first** (UI copy, small edits, quick prompts): _GPT-4.1 mini_ or _Gemini Flash 2.0_
+- **General coding** (features, refactors, tests): _GPT-4.1_ or _Claude Sonnet_
+- **Hard tasks** (deep reasoning, multi-file migrations): _GPT-5_ or _Claude Opus_
+
+<Warning>
+  Thinking-enabled models (e.g., GPT-5, Sonnet/Opus) are slower and consume more
+  credits. Use them when the extra reasoning matters.
+</Warning>

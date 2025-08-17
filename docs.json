@@ -18,7 +18,7 @@
           "getting-started/build-mobile-app",
           "getting-started/build-website",
           "getting-started/create-anywhere",
-          "getting-started/app-interface",
+          "getting-started/plans",
           "getting-started/faq"
         ]
       },
@@ -41,12 +41,15 @@
         "pages": [
           "mobile-apps/getting-started",
           "mobile-apps/run-on-phone",
+          "mobile-apps/use-app",
+          "mobile-apps/share",
           "mobile-apps/publish-appstore"
         ]
       },
       {
         "group": "Get Help",
         "pages": [
+          "get-help/common-issues",
           "get-help/support"
         ]
       }

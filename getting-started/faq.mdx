@@ -1,7 +1,101 @@
 ---
 title: FAQ
 description: "Frequently asked questions about SteerCode"
-icon: 'circle-question'
+icon: "circle-question"
 ---
 
-# FAQ
+<AccordionGroup>
+<Accordion title="What is SteerCode?">
+SteerCode is an AI-powered platform that lets you create **websites** and **native mobile apps** in plain language. You describe what you want; SteerCode generates, runs, and helps you iterate until it fits your needs.
+</Accordion>
+
+<Accordion title="What can I build with SteerCode?">
+  From landing pages to full-stack tools and production-ready mobile apps—if you
+  can describe it, you can likely build it. Start small and add features
+  incrementally for best results.
+</Accordion>
+
+<Accordion title="Do I need coding experience?">
+  No. SteerCode works for all skill levels. Developers can still dive into code,
+  connect integrations, and export/download codebases.
+</Accordion>
+
+<Accordion title="How do I create a project?">
+  On the dashboard, click **New project** and describe what you want to build.
+  SteerCode generates a starting point you can refine via chat. See{" "}
+  <a href="/getting-started/build-your-first-app">Build Your First App</a>.
+</Accordion>
+
+<Accordion title="Can I start from templates or remix?">
+  Yes. You can start from AI instructions, evolve an existing project, or adapt
+  patterns you like. (Public projects and showcases help you learn fast.)
+</Accordion>
+
+<Accordion title="How do I build efficiently with SteerCode?">
+  - Be clear and specific about features and target users - Focus on one feature
+  at a time - Build incrementally and test often - Use design cues or style
+  references if UI matters See{" "}
+  <a href="/how-to/plan">Planning best practices</a>.
+</Accordion>
+
+<Accordion title="How should I write prompts for best results?">
+  - Specify pages/screens, data fields, and user flows - Name any APIs or
+  integrations you expect - Provide sample data or formats - Mention device
+  features (camera, location, etc.) if needed
+</Accordion>
+
+<Accordion title="What should I do when I hit an error?">
+  1) **Ask SteerCode to investigate** — describe what you see (error text, steps
+  to reproduce). 2) **Iterate the fix** — if the first attempt doesn’t resolve
+  it, provide logs or constraints (e.g., “must keep Supabase schema unchanged”).
+  3) **Rollback the change** — if the issue persists, ask SteerCode to revert
+  the last set of changes or regenerate the feature in smaller steps.
+  <Warning>Fix attempts and investigations use credits.</Warning>
+</Accordion>
+
+<Accordion title="What is refactoring and why is it useful?">
+  Refactoring improves structure and maintainability without changing behavior.
+  It can: - Remove duplication and dead code - Improve performance and
+  reliability - Make future changes safer and faster
+</Accordion>
+
+<Accordion title="Can I connect a backend and store data?">
+  Yes. We recommend **Supabase** for auth and database. See{" "}
+  <a href="/how-to/integrations">Integrations</a>.
+</Accordion>
+
+<Accordion title="Can I add login to my website or app?">
+  Yes. Ask SteerCode to add authentication (e.g., email/password, social
+  sign-in) using Supabase. Follow the generated steps or the{" "}
+  <a href="/how-to/integrations">Integrations</a> guide.
+</Accordion>
+
+<Accordion title="Can I add third-party APIs (OpenAI, Stripe, etc.)?">
+  Yes. Mention the APIs in your prompt. SteerCode will scaffold calls and the
+  structure you need. See <a href="/how-to/integrations">Integrations</a>.
+</Accordion>
+
+<Accordion title="Where should I store API keys and secrets?">
+  Never hardcode secrets. Use environment variables and secret managers. If you
+  use Supabase, store keys in **Supabase secrets** and call them from **Edge
+  Functions**. See <a href="/how-to/secrets">Secrets</a>.
+</Accordion>
+
+<Accordion title="How do I add payments?">
+  Ask SteerCode to set up **Stripe** and the relevant flows (checkout,
+  webhooks). Follow the prompts and secure your keys. See{" "}
+  <a href="/how-to/integrations">Integrations</a>.
+</Accordion>
+
+<Accordion title="How can I improve SEO for my site?">
+  Use semantic HTML, meaningful titles/descriptions, fast load times, and clear
+  content hierarchy. Generate Open Graph images, sitemaps, and robots.txt as
+  needed. Publish on a custom domain for credibility. See{" "}
+  <a href="/how-to/custom-domains">Custom domains</a> and{" "}
+  <a href="/how-to/publish">Publish</a>.
+</Accordion>
+
+<Accordion title="How long does a project take?">
+It depends on complexity. You move fastest by breaking work into small tasks, testing after each change, and iterating based on feedback.
+</Accordion>
+</AccordionGroup>

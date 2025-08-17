@@ -1,7 +1,59 @@
 ---
 title: Code vs Plan Mode
 description: "Learn the difference between code and plan modes in SteerCode"
-icon: 'sliders'
+icon: "sliders"
 ---
 
-# Code vs Plan Mode
+<Frame caption="Switch between Code and Plan in the composer">
+  <img
+    src="/images/code-plan-mode-web.png"
+    alt="SteerCode composer with Code and Plan mode toggles"
+  />
+</Frame>
+
+SteerCode gives you two ways to work:
+
+<Tabs>
+<Tab title="Code Mode (Coding Agent)">
+- **Launches the coding agent** when you press **Send**.
+- Reads and edits files, runs builds, searches the web, and applies changes.
+- Each session **produces an updated app or website**.
+- Best for **implementing features**, **fixing bugs**, **refactoring**, and **integration work**.
+
+<Warning>
+Code Mode modifies your project. Make sure your prompt is specific and incremental to avoid broad changes.
+</Warning>
+</Tab>
+
+<Tab title="Plan Mode (Plan + Q&A)">
+- **Does not write code**. It answers questions, explores options, and drafts a plan.
+- Can **update the Project Plan** for future execution. See <a href="/how-to/plan">Plan</a>.
+- Best for **requirements**, **architecture decisions**, **debug strategy**, and **prompt drafting**.
+
+<Tip>
+Start in Plan Mode to outline the steps. When ready, switch to Code Mode to implement.
+</Tip>
+</Tab>
+</Tabs>
+
+### When to use which?
+
+<CardGroup cols={2}>
+  <Card title="Use Code Mode when…" icon="code">
+    You know the change you want: add a screen, wire Supabase auth, fix a
+    TypeScript error, or refactor a module.
+  </Card>
+  <Card title="Use Plan Mode when…" icon="list-check">
+    You’re exploring trade-offs, drafting schema, writing acceptance criteria,
+    or investigating an error before fixing it.
+  </Card>
+</CardGroup>
+
+### Credits & models
+
+<Info>
+  Your **model choice** controls credit usage and capability. See{" "}
+  <a href="/how-to/choose-ai-models">Choose AI Models</a>.
+</Info>
+
+<Tip>**Basic models do not consume credits.** Premium models do.</Tip>

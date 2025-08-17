@@ -1,7 +1,59 @@
 ---
 title: Custom Domains
 description: "Learn how to use custom domains with SteerCode"
-icon: 'globe'
+icon: "globe"
 ---
 
-# Custom Domains
+Native custom-domain publishing is in progress. Meanwhile, you can host your exported project on providers like **Vercel**, **GitHub Pages**, or **Cloudflare Pages**.
+
+### Option A — Vercel (recommended)
+
+<Steps>
+  <Step title="Download code">From **Codebase**, click **Download Code**.</Step>
+  <Step title="Create a repo">
+    Push the project to a new GitHub repository.
+  </Step>
+  <Step title="Import to Vercel">
+    In Vercel, **New Project → Import Git Repository**. Accept defaults or set
+    your framework if detected.
+  </Step>
+  <Step title="Set environment variables">
+    Add any required env vars (API keys, Supabase URL, etc.).
+  </Step>
+  <Step title="Add your domain">
+    In **Domains**, add `yourdomain.com` and follow the DNS instructions
+    (usually a CNAME or A record).
+  </Step>
+</Steps>
+
+### Option B — Cloudflare Pages
+
+<Steps>
+  <Step title="Connect your repo">
+    Create a Pages project and link your GitHub repo.
+  </Step>
+  <Step title="Build settings">
+    Use the detected framework or set the build command and output directory.
+  </Step>
+  <Step title="Add domain">
+    Attach your custom domain and update DNS as instructed.
+  </Step>
+</Steps>
+
+### Option C — GitHub Pages (static sites)
+
+<Steps>
+  <Step title="Build locally">
+    Generate a static build if your project supports it.
+  </Step>
+  <Step title="Publish to `gh-pages`">
+    Push the build output to the `gh-pages` branch and enable Pages in repo
+    settings.
+  </Step>
+</Steps>
+
+<Tip>
+  On **Premium**, you can remove the “Built with SteerCode” badge from
+  SteerCode-hosted sites. When self-hosting, remove any badge component directly
+  in code if present.
+</Tip>
