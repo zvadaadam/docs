@@ -1,79 +1,65 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SteerCode Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FD923A",
+    "light": "#FEB273",
+    "dark": "#9A4601"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "getting-started/build-your-first-app",
+          "getting-started/build-mobile-app",
+          "getting-started/build-website",
+          "getting-started/create-anywhere",
+          "getting-started/app-interface",
+          "getting-started/faq"
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "How To",
+        "pages": [
+          "how-to/code-vs-plan-mode",
+          "how-to/choose-ai-models",
+          "how-to/plan",
+          "how-to/codebase",
+          "how-to/private-projects",
+          "how-to/publish",
+          "how-to/custom-domains",
+          "how-to/integrations",
+          "how-to/secrets"
+        ]
+      },
+      {
+        "group": "Build Mobile Apps",
+        "pages": [
+          "mobile-apps/getting-started",
+          "mobile-apps/run-on-phone",
+          "mobile-apps/publish-appstore"
+        ]
+      },
+      {
+        "group": "Get Help",
+        "pages": [
+          "get-help/support"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
+  },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Community",
+        "href": "https://discord.com/invite/raveYYxZyJ",
+        "icon": "discord"
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -81,22 +67,18 @@
   },
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Start Building",
+      "href": "https://steercode.com"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/steercode",
+      "discord": "https://discord.com/invite/raveYYxZyJ",
+      "github": "https://github.com/steer-ai"
     }
   }
 }
